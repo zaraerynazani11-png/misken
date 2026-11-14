@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://7wo2b7xlqvko"]
+
+[node name="rat enemy" type="Node2D" unique_id=1656618918]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=863618033]
