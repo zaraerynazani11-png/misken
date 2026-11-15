@@ -16,7 +16,9 @@
 [node name="Node2D" type="Node2D" unique_id=540158172]
 
 [node name="Parallax2D3" type="Parallax2D" parent="." unique_id=275286780]
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer00110" type="Sprite2D" parent="Parallax2D3" unique_id=1186291113]
 position = Vector2(1621, -2)
@@ -24,8 +26,9 @@ scale = Vector2(4.478448, 1)
 texture = ExtResource("1_xg5pc")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=573319490]
-scroll_scale = Vector2(1.5, 1.5)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer00101" type="Sprite2D" parent="Parallax2D" unique_id=1606718116]
 position = Vector2(84, -3)
@@ -33,87 +36,100 @@ scale = Vector2(1.2136315, 1.0006305)
 texture = ExtResource("2_xgh10")
 
 [node name="Parallax2D2" type="Parallax2D" parent="." unique_id=187689899]
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer00092" type="Sprite2D" parent="Parallax2D2" unique_id=379112114]
-position = Vector2(1429.9999, -265)
-scale = Vector2(4.0301723, 1)
+position = Vector2(2045, -368)
+scale = Vector2(5.412716, 1.4823455)
 texture = ExtResource("3_8p2oy")
 
 [node name="Parallax2D4" type="Parallax2D" parent="." unique_id=55393521]
-scroll_scale = Vector2(2, 2)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer00083" type="Sprite2D" parent="Parallax2D4" unique_id=474165794]
-position = Vector2(564.99994, -288)
-scale = Vector2(2.09375, 1)
+position = Vector2(1412, -453)
+scale = Vector2(4.1179953, 1.4319042)
 texture = ExtResource("4_oejpp")
 
 [node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1673554733]
-scroll_scale = Vector2(3, 3)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer0007Lights" type="Sprite2D" parent="Parallax2D5" unique_id=339156567]
 position = Vector2(-98, -79)
 texture = ExtResource("5_kh70l")
 
 [node name="Parallax2D6" type="Parallax2D" parent="." unique_id=1262957968]
-scroll_scale = Vector2(3, 3)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer00064" type="Sprite2D" parent="Parallax2D6" unique_id=961248359]
-position = Vector2(-13, -252)
+position = Vector2(2312, -432)
+scale = Vector2(5.9127154, 1.6541613)
 texture = ExtResource("6_ljpdv")
 
 [node name="Parallax2D8" type="Parallax2D" parent="." unique_id=1333297436]
-scroll_scale = Vector2(3, 3)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer0004Lights" type="Sprite2D" parent="Parallax2D8" unique_id=676040219]
 position = Vector2(-40, -10)
 texture = ExtResource("8_uxgui")
 
 [node name="Parallax2D7" type="Parallax2D" parent="." unique_id=365861067]
-scroll_scale = Vector2(3, 3)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
 [node name="Layer00055" type="Sprite2D" parent="Parallax2D7" unique_id=2060359059]
-position = Vector2(824, -298)
-scale = Vector2(2.8275862, 1)
+position = Vector2(1637, -397)
+scale = Vector2(4.6336207, 1.7358134)
 texture = ExtResource("7_2y26r")
 
-[node name="Parallax2D10" type="Parallax2D" parent="." unique_id=1934845214]
-scroll_scale = Vector2(2, 2)
-repeat_size = Vector2(1152, 0)
-
-[node name="Layer00018" type="Sprite2D" parent="Parallax2D10" unique_id=393315840]
-position = Vector2(869, -285)
-scale = Vector2(2.8814654, 1)
-texture = ExtResource("11_gsf1l")
-
 [node name="Parallax2D12" type="Parallax2D" parent="." unique_id=204552075]
-scroll_scale = Vector2(2, 2)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
-[node name="Layer00027" type="Sprite2D" parent="." unique_id=113722356]
-position = Vector2(864, 301)
-scale = Vector2(2.90625, 1)
+[node name="Layer00027" type="Sprite2D" parent="Parallax2D12" unique_id=113722356]
+position = Vector2(2328, 314)
+scale = Vector2(6.0533404, 1)
 texture = ExtResource("10_gjv76")
 
 [node name="Parallax2D9" type="Parallax2D" parent="." unique_id=1249079650]
-scroll_scale = Vector2(3, 3)
+scroll_scale = Vector2(1, 0)
 repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
 
-[node name="Parallax2D11" type="Parallax2D" parent="." unique_id=1959083654]
-scroll_scale = Vector2(2, 2)
-scroll_offset = Vector2(-137, -491)
-repeat_size = Vector2(1152, 0)
-
-[node name="Layer00036" type="Sprite2D" parent="Parallax2D11" unique_id=861771141]
-position = Vector2(84, 216)
-texture = ExtResource("9_0irv4")
-
-[node name="Layer00009" type="Sprite2D" parent="Parallax2D11" unique_id=179691745]
-position = Vector2(1009, 229)
+[node name="Layer00009" type="Sprite2D" parent="Parallax2D9" unique_id=179691745]
+position = Vector2(872, -262)
 scale = Vector2(2.8868535, 1)
 texture = ExtResource("12_ehf02")
+
+[node name="Parallax2D11" type="Parallax2D" parent="." unique_id=1959083654]
+scroll_scale = Vector2(1, 0)
+scroll_offset = Vector2(-137, -491)
+repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
+
+[node name="Layer00036" type="Sprite2D" parent="Parallax2D11" unique_id=861771141]
+position = Vector2(1763.0001, 77.99998)
+scale = Vector2(4.625, 1.6447036)
+texture = ExtResource("9_0irv4")
+
+[node name="Parallax2D10" type="Parallax2D" parent="." unique_id=1934845214]
+scroll_scale = Vector2(1, 0)
+repeat_size = Vector2(1152, 0)
+limit_end = Vector2(10000000, 682)
+
+[node name="Layer00018" type="Sprite2D" parent="Parallax2D10" unique_id=393315840]
+position = Vector2(1702, -201)
+scale = Vector2(4.7413793, 1)
+texture = ExtResource("11_gsf1l")

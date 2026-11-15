@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://svj1sf2dfin3"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
+
 [node name="mushroomn enemy" type="Node2D" unique_id=678502194]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=913813175]
+sprite_frames = SubResource("SpriteFrames_1vivr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169504311]
