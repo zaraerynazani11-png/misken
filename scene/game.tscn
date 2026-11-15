@@ -183,3 +183,6 @@ color = Color(0.24522737, 0.17694435, 0.03539646, 1)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform" unique_id=820083157]
 position = Vector2(75, 8)
 shape = SubResource("RectangleShape2D_1vivr")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1763519696]
+position = Vector2(-479, 319)
