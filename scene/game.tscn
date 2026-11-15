@@ -186,3 +186,7 @@ shape = SubResource("RectangleShape2D_1vivr")
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1763519696]
 position = Vector2(-479, 319)
+
+[node name="ColorRect" type="ColorRect" parent="Node2D" unique_id=1208697591]
+offset_right = 40.0
+offset_bottom = 40.0
