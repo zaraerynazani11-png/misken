@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Player
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
@@ -23,3 +23,6 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+func die():
+	get_tree().reload_current_scene.call_deferred()

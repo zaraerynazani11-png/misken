@@ -1,10 +1,67 @@
 [gd_scene format=3 uid="uid://svj1sf2dfin3"]
 
+[ext_resource type="Texture2D" uid="uid://bct0xgqjj1kww" path="res://assets/maskin vulvarik/mushroom enemy 1 small .png" id="1_wtqek"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2s52p"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(0, 0, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxr5w"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(66, 0, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6d8n"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(132, 0, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qsbdm"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(0, 66, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jjyi4"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(66, 66, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_leunl"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(132, 66, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kj7c8"]
+atlas = ExtResource("1_wtqek")
+region = Rect2(0, 132, 66, 66)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_1vivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2s52p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxr5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6d8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qsbdm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jjyi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_leunl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kj7c8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 2.0
+}]
 
 [node name="mushroomn enemy" type="Node2D" unique_id=678502194]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=913813175]
 sprite_frames = SubResource("SpriteFrames_1vivr")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169504311]
+autoplay = "default"
+frame_progress = 0.31995484

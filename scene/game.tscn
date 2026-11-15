@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://0a3lcu0wpcc" path="res://scene/background.tscn" id="1_5kiuu"]
 [ext_resource type="PackedScene" uid="uid://c3d060oqkdlyo" path="res://scene/branch.tscn" id="2_dbls1"]
 [ext_resource type="Texture2D" uid="uid://b75a41a7cutra" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="3_33cqm"]
+[ext_resource type="PackedScene" uid="uid://bajb15216lbq6" path="res://scene/mushroom_enemy_big.tscn" id="4_xwcet"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_33cqm"]
 
@@ -187,6 +188,5 @@ shape = SubResource("RectangleShape2D_1vivr")
 [node name="Node2D" type="Node2D" parent="." unique_id=1763519696]
 position = Vector2(-479, 319)
 
-[node name="ColorRect" type="ColorRect" parent="Node2D" unique_id=1208697591]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Mushroom enemy big" parent="." unique_id=479934411 instance=ExtResource("4_xwcet")]
+position = Vector2(-178, 311)

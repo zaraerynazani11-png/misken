@@ -1,3 +1,80 @@
 [gd_scene format=3 uid="uid://bajb15216lbq6"]
 
+[ext_resource type="Script" uid="uid://cnvr5rc6g8t7g" path="res://scene/mushroom_enemy_big.gd" id="1_33rc8"]
+[ext_resource type="Texture2D" uid="uid://c0uic1kwg38lk" path="res://assets/maskin vulvarik/bigvnusheoom big move .png" id="1_fcdkn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33rc8"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(0, 0, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07wmt"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(66, 0, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wlb3"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(132, 0, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmbi0"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(0, 66, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pej6f"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(66, 66, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4b6a8"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(132, 66, 66, 66)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msr50"]
+atlas = ExtResource("1_fcdkn")
+region = Rect2(0, 132, 66, 66)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dd8bh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33rc8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07wmt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wlb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmbi0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pej6f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4b6a8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_msr50")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd8bh"]
+size = Vector2(20, 34)
+
 [node name="Mushroom enemy big" type="Node2D" unique_id=479934411]
+script = ExtResource("1_33rc8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1606968221]
+sprite_frames = SubResource("SpriteFrames_dd8bh")
+autoplay = "default"
+frame_progress = 0.8784295
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2038650004]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=835622376]
+position = Vector2(0, 7)
+shape = SubResource("RectangleShape2D_dd8bh")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
