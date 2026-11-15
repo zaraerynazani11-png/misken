@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://svj1sf2dfin3"]
+
+[node name="mushroomn enemy" type="Node2D" unique_id=678502194]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169504311]

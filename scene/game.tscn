@@ -1,4 +1,18 @@
 [gd_scene format=3 uid="uid://durj8p4npls2w"]
 
+[ext_resource type="PackedScene" uid="uid://0a3lcu0wpcc" path="res://scene/background.tscn" id="1_5kiuu"]
+[ext_resource type="Script" uid="uid://k2vn5tae81tv" path="res://scene/camera_2d.gd" id="2_dbls1"]
+
 [node name="game" type="Node2D" unique_id=1320316496]
-position = Vector2(0, 4)
+position = Vector2(-9, -13)
+
+[node name="background" parent="." unique_id=2043305474 instance=ExtResource("1_5kiuu")]
+position = Vector2(-71, 225)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=578944758]
+position = Vector2(-234, 234)
+zoom = Vector2(2, 2)
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+rotation_smoothing_enabled = true
+script = ExtResource("2_dbls1")
